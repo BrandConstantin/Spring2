@@ -18,6 +18,12 @@
 		<constructor-arg ref="myFortune"></constructor-arg>
 	</bean>
 
+	<bean id="myCricketCoach"
+		class="com.udemy.spring.example.CricketCoach">
+		<!-- set up setter injection -->
+		<property name="fortuneServ" ref="myFortune"></property>
+	</bean>
+
 	<!-- My logger config -->
 	<bean id="myLoggerConfig"
 		class="com.udemy.spring.example.MyLoggerConfig"
