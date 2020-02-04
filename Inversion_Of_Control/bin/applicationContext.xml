@@ -22,6 +22,10 @@
 		class="com.udemy.spring.example.CricketCoach">
 		<!-- set up setter injection -->
 		<property name="fortuneServ" ref="myFortune"></property>
+		
+		<!-- inject lieteral values -->
+		<property name="emailAddress" value="team@swf.es"></property>
+		<property name="team" value="Sunrise Sun"></property>
 	</bean>
 
 	<!-- My logger config -->

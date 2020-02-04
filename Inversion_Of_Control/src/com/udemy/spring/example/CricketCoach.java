@@ -2,6 +2,28 @@ package com.udemy.spring.example;
 
 public class CricketCoach implements Coach {
 	private FortuneService fortuneServ;
+	
+	// add new fields
+	private String emailAddress;
+	private String team;	
+
+	public String getEmailAddress() {
+		return emailAddress;
+	}
+
+	public String getTeam() {
+		return team;
+	}
+
+	public void setEmailAddress(String emailAddress) {
+		System.out.println("Set email");
+		this.emailAddress = emailAddress;
+	}
+
+	public void setTeam(String team) {
+		System.out.println("Set team");
+		this.team = team;
+	}
 
 	// create no-arg constructor
 	public CricketCoach() {

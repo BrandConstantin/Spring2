@@ -12,6 +12,7 @@ public class MyAppSetterDemo {
 		
 		// call the methods on the bean
 		System.out.println(theCoach.getDailyFortune() + " => " + theCoach.getDailyWorkout());
+		System.out.println(theCoach.getEmailAddress() + " and " + theCoach.getTeam());
 		
 		// close the context
 		context.close();
