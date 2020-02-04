@@ -12,6 +12,10 @@
 		class="com.udemy.spring.example.ImplementFortuneService">
 	</bean>
 
+	<!-- load the properties file -->
+	<context:property-placeholder
+		location="classpath:sport.properties" />
+
 	<!-- Define your beans -->
 	<bean id="myCoach" class="com.udemy.spring.example.BaseballCoach">
 		<!-- set up the constructor injection -->
@@ -22,10 +26,14 @@
 		class="com.udemy.spring.example.CricketCoach">
 		<!-- set up setter injection -->
 		<property name="fortuneServ" ref="myFortune"></property>
-		
+
 		<!-- inject lieteral values -->
-		<property name="emailAddress" value="team@swf.es"></property>
-		<property name="team" value="Sunrise Sun"></property>
+<!-- 		<property name="emailAddress" value="team@swf.es"></property> -->
+<!-- 		<property name="team" value="Sunrise Sun"></property> -->
+
+		<!-- inject from properties file -->
+		<property name="emailAddress" value="${foo.email}"></property>
+		<property name="team" value="${foo.team}"></property>
 	</bean>
 
 	<!-- My logger config -->
