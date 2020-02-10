@@ -2,7 +2,7 @@ package es.spring.annotations;
 
 import org.springframework.stereotype.Component;
 
-@Component("thatCoach")
+@Component //use the default bean because we don't specify one
 public class TennisCoach implements Coach {
 
 	@Override
