@@ -1,6 +1,6 @@
 package com.udemy.spring.example;
 
-public class TrackCoach implements Coach {
+public class TrackCoach implements Coach {	
 
 	@Override
 	public String getDailyWorkout() {
@@ -12,4 +12,13 @@ public class TrackCoach implements Coach {
 		return null;
 	}
 
+	// add an init method
+	public void doMyStartupStuff() {
+		System.out.println("Inside the method doMyStartupStuff");
+	}
+	
+	// add a destroy method
+	public void doMyCleanStuff() {
+		System.out.println("Clean the method with doMyCleanStuff");		
+	}
 }
