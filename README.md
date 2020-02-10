@@ -7,9 +7,9 @@ The course ## https://www.udemy.com/course/spring-hibernate-tutorial/ ##
 - Inversion Of Control
 - Dependency Injection
 - Setter injection
-- literal value injection
-- injection value from properties file
-- bean scopes
-- bean lifecycle
-- java annotations
-- default component name
+- Literal value injection
+- Injection value from properties file
+- Bean scopes
+- Bean lifecycle
+- Java annotations
+- Default component name
