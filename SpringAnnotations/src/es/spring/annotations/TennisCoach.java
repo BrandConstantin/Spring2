@@ -1,11 +1,13 @@
 package es.spring.annotations;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 @Component //use the default bean because we don't specify one
 public class TennisCoach implements Coach {
 	@Autowired
+	@Qualifier("randomFortuneService")
 	private FortuneService fortuneService;
 
 	@Override
