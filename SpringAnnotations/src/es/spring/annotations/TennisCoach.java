@@ -5,6 +5,7 @@ import org.springframework.stereotype.Component;
 
 @Component //use the default bean because we don't specify one
 public class TennisCoach implements Coach {
+	@Autowired
 	private FortuneService fortuneService;
 
 	@Override
@@ -27,10 +28,10 @@ public class TennisCoach implements Coach {
 		System.out.println(">> inside default constructor");
 	}
 	
-	// define a setter method
-	@Autowired
-	public void setFortuneService(FortuneService theFortuneService) {
-		System.out.println(">> inside setFortuneService methdo");
-		this.fortuneService = theFortuneService;
-	}
+//	// define a setter method
+//	@Autowired
+//	public void setFortuneService(FortuneService theFortuneService) {
+//		System.out.println(">> inside setFortuneService methdo");
+//		this.fortuneService = theFortuneService;
+//	}
 }
