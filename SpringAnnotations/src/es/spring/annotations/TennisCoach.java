@@ -1,12 +1,15 @@
 package es.spring.annotations;
 
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 @Component //use the default bean because we don't specify one
-@Scope("prototype")
+//@Scope("prototype")
 public class TennisCoach implements Coach {
 	@Autowired
 	@Qualifier("randomFortuneService")
@@ -20,6 +23,18 @@ public class TennisCoach implements Coach {
 	@Override
 	public String getDaylyFortune() {
 		return fortuneService.getFortune();
+	}
+	
+	// define init method
+	@PostConstruct
+	public void startStuff() {
+		System.out.println("start stuff");
+	}
+	
+	// define destroy method
+	@PreDestroy
+	public void destroyStuff() {
+		System.out.println("destroy stuff");
 	}
 
 //	@Autowired
