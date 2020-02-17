@@ -13,3 +13,10 @@ The course ## https://www.udemy.com/course/spring-hibernate-tutorial/ ##
 - Bean lifecycle
 - Java annotations
 - Default component name
+- Constructro injection
+- Qualifiers
+- Bean Scope
+- Bean Lifecycle method
+- Spring configuration with no xml
+- Define bean with java 
+- Inject values from properties file
