@@ -18,6 +18,12 @@ public class SwimJavaConfigDemoApp {
 		// call method daily fortune
 		System.out.println(theCoach.getDaylyFortune());
 		
+		// inject value from properties file
+		SwimCoach swimCoach = context.getBean("swimCoach", SwimCoach.class);
+		// call the swim coach methods
+		System.out.println("email " + swimCoach.getEmail());
+		System.out.println("team " + swimCoach.getTeam());
+		
 		// close the context
 		context.close();
 	}
