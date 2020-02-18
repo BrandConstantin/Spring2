@@ -3,6 +3,8 @@ package es.spring.mvc;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
 import javax.servlet.http.HttpServletRequest;
 
 
@@ -28,6 +30,19 @@ public class HelloWorldController {
 		
 		theName = theName.toUpperCase();
 		String result = "yo " + theName;		
+		
+		// add message to the model
+		model.addAttribute("message", result);
+		
+		return "helloworld";
+		
+	}
+	
+	@RequestMapping("/processFormVersionThree")
+	public String processFormVersionThree(@RequestParam("studentName") String theName, Model model) {
+		
+		theName = theName.toUpperCase();
+		String result = "third version " + theName;		
 		
 		// add message to the model
 		model.addAttribute("message", result);
