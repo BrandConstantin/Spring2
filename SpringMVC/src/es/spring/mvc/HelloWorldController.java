@@ -1,7 +1,10 @@
 package es.spring.mvc;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import javax.servlet.http.HttpServletRequest;
+
 
 @Controller
 public class HelloWorldController {
@@ -15,5 +18,21 @@ public class HelloWorldController {
 	@RequestMapping("/processForm")
 	public String processForm() {
 		return "helloworld";
+	}
+	
+	// new controller method to read from data and add data to model
+	@RequestMapping("/processFormVersionTwo")
+	public String letsShoutDude(HttpServletRequest request, Model model) {
+		// read the request parameter from html form
+		String theName = request.getParameter("studentName");
+		
+		theName = theName.toUpperCase();
+		String result = "yo " + theName;		
+		
+		// add message to the model
+		model.addAttribute("message", result);
+		
+		return "helloworld";
+		
 	}
 }

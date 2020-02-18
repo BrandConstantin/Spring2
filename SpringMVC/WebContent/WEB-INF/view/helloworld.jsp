@@ -8,6 +8,11 @@
 </head>
 <body>
 <h1>Hello Wold </h1>
-<p>Student name: ${param.studentName}
+<p>Student name: ${param.studentName}</p>
+
+<p>The message: ${message}</p>
+
+
+<script src="${pageContext.request.contextPath}/resources/images/spring.png"></script>
 </body>
 </html>
