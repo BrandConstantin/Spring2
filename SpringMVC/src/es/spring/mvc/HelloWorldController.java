@@ -9,6 +9,7 @@ import javax.servlet.http.HttpServletRequest;
 
 
 @Controller
+@RequestMapping("/hello") //parent mapping
 public class HelloWorldController {
 	// controller method to show initial form
 	@RequestMapping("/showForm")
