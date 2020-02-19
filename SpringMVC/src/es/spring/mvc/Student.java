@@ -7,6 +7,7 @@ public class Student {
 	public String lastName;
 	public String country;
 	private LinkedHashMap<String, String> erasmusCountry;
+	public String favoriteLanguage;
 	
 	public Student() {
 		// populate range birth options
@@ -48,5 +49,13 @@ public class Student {
 //	public void setErasmusCountry(LinkedHashMap<String, String> erasmusCountry) {
 //		this.erasmusCountry = erasmusCountry;
 //	}
+
+	public String getFavoriteLanguage() {
+		return favoriteLanguage;
+	}
+
+	public void setFavoriteLanguage(String favoriteLanguage) {
+		this.favoriteLanguage = favoriteLanguage;
+	}
 	
 }

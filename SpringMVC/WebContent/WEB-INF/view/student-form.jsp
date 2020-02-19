@@ -20,7 +20,23 @@
 				</form:select><br/>
 		Erasmus Country: <form:select path="erasmusCountry">
 						<form:options items="${student.erasmusCountry}" />
-					</form:select><br/>
+					</form:select><br/><br/>
+		Languege for programming:
+		<table>
+			<tr>
+				<td><form:radiobutton path="favoriteLanguage" value="Java"/></td>
+				<td>Java</td>
+				<td><form:radiobutton path="favoriteLanguage" value="Phyton"/></td>
+				<td>Phyton</td>
+			</tr>
+			<tr>
+				<td><form:radiobutton path="favoriteLanguage" value="C++"/></td>
+				<td>C++</td>
+				<td><form:radiobutton path="favoriteLanguage" value="PHP"/></td>
+				<td>PHP</td>
+			</tr>
+		</table><br/>
+
 		<input type="submit" value="Submit Form" />
 	</form:form>
 </body>
