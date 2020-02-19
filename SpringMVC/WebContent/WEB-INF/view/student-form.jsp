@@ -36,7 +36,19 @@
 				<td>PHP</td>
 			</tr>
 		</table><br/>
-
+		Select IDE for work:
+		<table>
+			<tr>
+				<td><form:checkbox path="favoriteIde" value="Eclipse"/></td>
+				<td>Eclipse</td>
+				<td><form:checkbox path="favoriteIde" value="NetBeans"/></td>
+				<td>NetBeans</td>
+				<td><form:checkbox path="favoriteIde" value="Visual Studio Code"/></td>
+				<td>Visual Studio Code</td>
+				<td><form:checkbox path="favoriteIde" value="Atom"/></td>
+				<td>Atom</td>
+			</tr>
+		</table><br/>
 		<input type="submit" value="Submit Form" />
 	</form:form>
 </body>
