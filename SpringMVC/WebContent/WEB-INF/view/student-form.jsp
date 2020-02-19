@@ -11,6 +11,16 @@
 	<form:form action="processForm" modelAttribute="student">
 		First name: <form:input path="firstName"/><br/>
 		Second name <form:input path="lastName"/><br/>
+		Country: <form:select path="country">
+					<form:option value="France" label="France"></form:option>
+					<form:option value="Italy" label="Italy"></form:option>
+					<form:option value="Spain" label="Spain"></form:option>
+					<form:option value="Romania" label="Romania"></form:option>
+					<form:option value="Portugal" label="Portugal"></form:option>
+				</form:select><br/>
+		Erasmus Country: <form:select path="erasmusCountry">
+						<form:options items="${student.erasmusCountry}" />
+					</form:select><br/>
 		<input type="submit" value="Submit Form" />
 	</form:form>
 </body>
