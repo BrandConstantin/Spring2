@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; UTF-8"
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
@@ -7,7 +7,7 @@
 <title>Processed Form</title>
 </head>
 <body>
-<h1>Hello Wold </h1>
+<h1>Hello World </h1>
 <p>Student name: ${param.studentName}</p>
 
 <p>The message: ${message}</p>
