@@ -20,3 +20,14 @@ The course ## https://www.udemy.com/course/spring-hibernate-tutorial/ ##
 - Spring configuration with no xml
 - Define bean with java 
 - Inject values from properties file
+- Spring MVC - creating controllers
+- Reading from data
+- Adding data to Model
+- Biding request params
+- Request mapping to controller
+- Form tags and data binding
+- Drop-down list
+- Radio buttons
+- Checkboxes
+- Validation
+- Validating number range
