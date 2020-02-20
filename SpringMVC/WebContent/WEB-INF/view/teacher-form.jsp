@@ -15,6 +15,8 @@
 		<p>First name: <form:input path="firstName"/></p>
 		<p>Second name (*): <form:input path="lastName"/></p>
 		<form:errors path="lastName" cssClass="error"></form:errors>
+		<p>Total students (*): <form:input path="numberStudents" type="number"/></p>
+		<form:errors path="numberStudents" cssClass="error"></form:errors>
 		
 		<br/><br/>
 		<input type="submit" value="Submit Form" />
