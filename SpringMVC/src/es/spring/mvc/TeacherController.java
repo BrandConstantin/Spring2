@@ -37,6 +37,9 @@ public class TeacherController {
 			if(theTeacher.getNumberStudents() == null) {
 				theTeacher.setNumberStudents("0");
 			}
+			if(theTeacher.getTeacherCode() == null) {
+				theTeacher.setTeacherCode("Don't have a code");
+			}
 			System.out.println(theTeacher.getFirstName() + " = " + theTeacher.getLastName() + " = " + theTeacher.getNumberStudents());
 			return "teacher-confirmation";
 		}
