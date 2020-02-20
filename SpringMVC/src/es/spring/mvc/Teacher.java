@@ -1,5 +1,7 @@
 package es.spring.mvc;
 
+import javax.validation.constraints.Max;
+import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
@@ -17,12 +19,23 @@ public class Teacher {
 		return lastName;
 	}
 	
+	@Min(value=0, message="The min number can't be less to 0")
+	@Max(value=10, message="The max number can't be greater to 10")
+	private String numberStudents;
+	
 	public void setFirstName(String firstName) {
 		this.firstName = firstName;
 	}
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
 	}
-	
-	
+
+	public String getNumberStudents() {
+		return numberStudents;
+	}
+
+	public void setNumberStudents(String numberStudents) {
+		this.numberStudents = numberStudents;
+	}
+		
 }

@@ -34,7 +34,10 @@ public class TeacherController {
 		if(theBindingResult.hasErrors()) {
 			return "teacher-form";
 		}else {
-			System.out.println(theTeacher.getFirstName() + " = " + theTeacher.getLastName());
+			if(theTeacher.getNumberStudents() == null) {
+				theTeacher.setNumberStudents("0");
+			}
+			System.out.println(theTeacher.getFirstName() + " = " + theTeacher.getLastName() + " = " + theTeacher.getNumberStudents());
 			return "teacher-confirmation";
 		}
 	}
