@@ -9,5 +9,6 @@
 <body>
 <p>Register confirmated for the teacher ${teacher.firstName} ${teacher.lastName}</p>
 <p>The total of students are ${teacher.numberStudents}</p>
+<p>The teacher code are ${teacher.teacherCode}</p>
 </body>
 </html>
