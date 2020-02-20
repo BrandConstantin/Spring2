@@ -11,5 +11,7 @@
 Go to <a href="hello/showForm">form</a>
 <br/>
 Go to <a href="student/showForm">Registration Student</a>
+<br/>
+Go to <a href="teacher/showForm">Registration Teacher</a>
 </body>
 </html>
