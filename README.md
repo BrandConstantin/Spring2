@@ -31,3 +31,7 @@ The course ## https://www.udemy.com/course/spring-hibernate-tutorial/ ##
 - Checkboxes
 - Validation
 - Validating number range
+- Validating regular expressions
+- Integer field required
+- Handle string input
+- Custom validation rules with Java Annotation
