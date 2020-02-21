@@ -31,11 +31,13 @@ public class TeacherController {
 	@RequestMapping("/processForm")
 	public String processForm(@Valid @ModelAttribute("teacher") Teacher theTeacher,
 								BindingResult theBindingResult) {
+		System.out.println("Binding result " + theBindingResult);
+		System.out.println("\n\n");
 		if(theBindingResult.hasErrors()) {
 			return "teacher-form";
 		}else {
 			if(theTeacher.getNumberStudents() == null) {
-				theTeacher.setNumberStudents("0");
+				theTeacher.setNumberStudents(0);
 			}
 			if(theTeacher.getTeacherCode() == null) {
 				theTeacher.setTeacherCode("Don't have a code");
