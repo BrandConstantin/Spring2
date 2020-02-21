@@ -6,6 +6,8 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 
+import es.spring.mvc.validation.TeacherCode;
+
 public class Teacher {
 	private String firstName;
 	private String lastName;
@@ -25,7 +27,8 @@ public class Teacher {
 	@Max(value=10, message="The max number can't be greater to 10")
 	private Integer numberStudents;
 	
-	@Pattern(regexp="^[a-zA-Z0-9]{5}", message="Only 5 chars/digits accepted")
+	//@Pattern(regexp="^[a-zA-Z0-9]{5}", message="Only 5 chars/digits accepted")
+	@TeacherCode()
 	private String teacherCode;
 	
 	public void setFirstName(String firstName) {
