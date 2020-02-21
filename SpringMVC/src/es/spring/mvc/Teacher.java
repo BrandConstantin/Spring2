@@ -20,9 +20,10 @@ public class Teacher {
 		return lastName;
 	}
 	
+	@NotNull(message="This input is required urgently")
 	@Min(value=0, message="The min number can't be less to 0")
 	@Max(value=10, message="The max number can't be greater to 10")
-	private String numberStudents;
+	private Integer numberStudents;
 	
 	@Pattern(regexp="^[a-zA-Z0-9]{5}", message="Only 5 chars/digits accepted")
 	private String teacherCode;
@@ -34,11 +35,11 @@ public class Teacher {
 		this.lastName = lastName;
 	}
 
-	public String getNumberStudents() {
+	public Integer getNumberStudents() {
 		return numberStudents;
 	}
 
-	public void setNumberStudents(String numberStudents) {
+	public void setNumberStudents(Integer numberStudents) {
 		this.numberStudents = numberStudents;
 	}
 
