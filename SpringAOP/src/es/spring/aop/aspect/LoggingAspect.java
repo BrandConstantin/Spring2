@@ -14,7 +14,8 @@ public class LoggingAspect {
 	//@Before("execution(public void add*())") // match any add* method
 	//@Before("execution(void add*())") // match any return type
 	//@Before("execution(* add*())") // match any return type
-	@Before("execution(* add*(es.spring.aop.Account))") // match method with account and more params
+	//@Before("execution(* add*(es.spring.aop.Account))") // match method with parameter type
+	@Before("execution(* add*(es.spring.aop.Account, ..))") // match method with any number of arguments
 	public void beforeAddAccountAdvice() {
 		System.out.println(">>> executing @Before");
 	}
