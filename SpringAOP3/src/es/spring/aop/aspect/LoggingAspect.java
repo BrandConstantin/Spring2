@@ -11,12 +11,24 @@ public class LoggingAspect {
 	@Pointcut("execution(* es.spring.aop.dao.*.*(..))")
 	private void forDaoPackage() {}
 	
-	@Before("forDaoPackage()") 
+	// create pointcut for getters methods
+	@Pointcut("execution(* es.spring.aop.dao.*.get*(..))")
+	private void getter() {}
+	
+	// create pointcut for setter methods
+	@Pointcut("execution(* es.spring.aop.dao.*.set*(..))")
+	private void setter() {}
+	
+	// create pointcut include package but exclude getter and setters
+	@Pointcut("forDaoPackage() && !(getter() || setter())")
+	private void forDaoExcludeGetterAndSetter() {}
+	
+	@Before("forDaoExcludeGetterAndSetter()") 
 	public void beforeAddAccountAdvice() {
 		System.out.println(">>> executing @Before with pointcut declaration @Pointcut");
 	}
 	
-	@Before("forDaoPackage()")
+	@Before("forDaoExcludeGetterAndSetter()")
 	public void performApiAnalytics() {
 		System.out.println(">>> executing API analytics");
 	}
