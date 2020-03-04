@@ -35,3 +35,6 @@ The course ## https://www.udemy.com/course/spring-hibernate-tutorial/ ##
 - Integer field required
 - Handle string input
 - Custom validation rules with Java Annotation
+- @Transactional annotations
+- Default page
+- Service Layer
