@@ -27,8 +27,24 @@ public class LoggingAspect {
 		
 		// print out the result of the method call
 		System.out.println("result is " + resultsForAccounts);
+		
+		// let's post-process the data and modify it
+		// convert the account name to uppercase
+		convertAccountNamesToUpperCase(resultsForAccounts);
+		System.out.println(resultsForAccounts);
 	}
 	
+	private void convertAccountNamesToUpperCase(List<Account> resultsForAccounts) {
+		// loop through accounts
+		for(Account tempAccount : resultsForAccounts) {
+			// get uppercase version of name
+			String theUpperName = tempAccount.getName().toUpperCase();
+			
+			// update the name of the account
+			tempAccount.setName(theUpperName);
+		}
+	}
+
 	@Before("es.spring.aop.aspect.ExpressionsAspect.forDaoExcludeGetterAndSetter()")
 	public void beforeAddAccountAdvice(JoinPoint theJoinPoint) {
 		System.out.println(">>> executing @Before with pointcut declaration @Pointcut");
