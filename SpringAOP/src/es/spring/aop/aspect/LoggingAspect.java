@@ -11,7 +11,9 @@ public class LoggingAspect {
 	// start with @Before advice
 	//@Before("execution(public void addAccount())") // match addAccount() method in any class
 	//@Before("execution(public void es.spring.aop.dao.AccountDAO.addAccount())") // match only addAccount method for this specific class
-	@Before("execution(public void add*())") // match any add* method
+	//@Before("execution(public void add*())") // match any add* method
+	//@Before("execution(void add*())") // match any return type
+	@Before("execution(* add*())") // match any return type
 	public void beforeAddAccountAdvice() {
 		System.out.println(">>> executing @Before");
 	}
