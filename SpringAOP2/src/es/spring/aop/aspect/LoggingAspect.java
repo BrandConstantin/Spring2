@@ -15,4 +15,9 @@ public class LoggingAspect {
 	public void beforeAddAccountAdvice() {
 		System.out.println(">>> executing @Before with pointcut declaration @Pointcut");
 	}
+	
+	@Before("forDaoPackage()")
+	public void performApiAnalytics() {
+		System.out.println(">>> executing API analytics");
+	}
 }
