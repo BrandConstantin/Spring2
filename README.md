@@ -5,7 +5,7 @@ Initiation course [SPRING (INITIATION COURSE)]( https://github.com/BrandConstant
 # Spring2
 Learn Spring and Hibernate with udemy
 
-The course is ## [udemy](https://www.udemy.com/course/spring-hibernate-tutorial/) ##
+The course is ## [Spring & Hibernate for Beginners (includes Spring Boot)](https://www.udemy.com/course/spring-hibernate-tutorial/) ##
 
 ### Content ###
 - Additional info logger
