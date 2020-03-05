@@ -40,8 +40,8 @@ public class LoggingAspect {
 		} catch (Throwable e) {			
 			// log the exception
 			myLogger.warning(e.getMessage());
-			// give user a custom message
-			result = "No worries, everything have a solution";
+			// retwrow the exception
+			throw e;
 		}
 		
 		// get end timestamp
