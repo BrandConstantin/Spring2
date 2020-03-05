@@ -68,6 +68,9 @@
 					</c:forEach>
 
 				</table>
+				
+				<br/><br/><br/><br/>
+				<img alt="AOP" src="${pageContext.request.contextPath}/resources/img/aop.PNG" width="700px" height="350px" />
 
 			</div>
 

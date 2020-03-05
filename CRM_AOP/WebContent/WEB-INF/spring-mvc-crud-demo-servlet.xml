@@ -76,7 +76,7 @@
 
 	<!-- Add support for reading web resources: css, images, js, etc ... -->
 	<mvc:resources location="/resources/" mapping="/resources/**"></mvc:resources>
-	<mvc:resources location="/images/" mapping="/images/**"></mvc:resources>		
+	<mvc:resources location="/img/" mapping="/img/**"></mvc:resources>		
 
 
 
