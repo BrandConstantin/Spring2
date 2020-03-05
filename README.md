@@ -35,9 +35,10 @@ The course ## https://www.udemy.com/course/spring-hibernate-tutorial/ ##
 - Integer field required
 - Handle string input
 - Custom validation rules with Java Annotation
-- ### Hibernate ### >> https://github.com/BrandConstantin/Hibernate
-- ### CRUD ### >> https://github.com/BrandConstantin/Hibernate/tree/master/CRUD
-- ### CRM ### >> https://github.com/BrandConstantin/Hibernate/tree/master/CRM
+- >> ### Hibernate ### << https://github.com/BrandConstantin/Hibernate
+- >> ### CRUD ### << https://github.com/BrandConstantin/Hibernate/tree/master/CRUD
+- >> ### CRM ### << https://github.com/BrandConstantin/Hibernate/tree/master/CRM
+[a link](https://github.com/user/repo/blob/branch/other_file.md)
 - @Transactional annotations
 - Default page
 - Service layer
@@ -54,3 +55,4 @@ The course ## https://www.udemy.com/course/spring-hibernate-tutorial/ ##
 * AOP - @After
 * AOP - @Around
 * AOP - @Around with logger
+- ### CRM_AOP ### >> 
