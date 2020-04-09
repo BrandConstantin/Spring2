@@ -60,3 +60,4 @@ The course is ## [Spring & Hibernate for Beginners (includes Spring Boot)](https
 * AOP - @Around
 * AOP - @Around with logger
 - >> ### [CRM_AOP](https://github.com/BrandConstantin/Spring2/tree/CRM_AOP/CRM_AOP) ### >> 
+- >> ### [Spring Security, Boot, REST](https://github.com/BrandConstantin/Spring_Security-REST-Boot) ### >> 
